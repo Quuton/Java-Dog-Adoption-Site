@@ -1,2 +1,4 @@
 # Java-Dog-Adoption-Site
- A project using springboot to make a mock dog adoption site
+A basic project of a mock dog adoption site.
+Backend is powered by Springboot framework, frontend is provided by angular components.
+

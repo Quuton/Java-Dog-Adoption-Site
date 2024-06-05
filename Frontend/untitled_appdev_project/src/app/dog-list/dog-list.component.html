@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="https://www.4luvofdog.org/wp-content/uploads/2020/04/hash-interactive-4-luv-of-dog-logo.png">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="#">
+              <img src="https://mcdcdn.blob.core.windows.net/images/outletservices/79347/logo-animal_shelters17082023013739.png" alt="logo" width="75" height="75">
+            </a>
+          </div>
+          <ul class="links">
+            <li><a href="home">Home</a></li>
+            <li><a href="adopt">Adopt</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="login">Login</a></li>
+          </ul>
+          <a href="#" class="action_btn">Get Started</a>
+          <div class="toggle_btn" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown_menu" [ngClass]="{'open': isMenuOpen}">
+            <li><a href="home">Home</a></li>
+            <li><a href="adopt">Adopt</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <a href="/home"><button class="add-dog-button">Return home</button></a>
+
+        <table class="dog-list">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Breed</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let dog of dogs">
+                <tr>
+                    <td>{{dog.id}}</td>
+                    <td>{{dog.name}}</td>
+                    <td>{{dog.breed}}</td>
+                    <td>{{dog.turnInDate}}</td>
+                    <td>{{dog.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>

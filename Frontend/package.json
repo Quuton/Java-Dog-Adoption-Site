@@ -1,0 +1,16 @@
+{
+  "name": "untitled_appdev_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@angular/cli": "^16.2.8",
+    "g": "^2.0.1"
+  }
+}

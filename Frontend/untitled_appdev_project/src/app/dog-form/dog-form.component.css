@@ -1,0 +1,31 @@
+form {
+    width:50vw;
+    background-color: rgba(46, 46, 46, 0.927);
+    color:white;
+    padding:4px;
+    margin-inline: auto;
+}
+
+h2 {
+    text-align: center;
+}
+body {
+    background-image: url('https://images.alphacoders.com/113/113743.jpg');
+    height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  button {
+    color:white;
+    border: solid 2px white;
+    border-radius: 4px;
+    background-color: #00000000;
+    text-align: center;
+  }
+  a {
+    color:white;
+    display: block;
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="https://www.4luvofdog.org/wp-content/uploads/2020/04/hash-interactive-4-luv-of-dog-logo.png">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="#">
+              <img src="https://mcdcdn.blob.core.windows.net/images/outletservices/79347/logo-animal_shelters17082023013739.png" alt="logo" width="75" height="75">
+            </a>
+          </div>
+          <ul class="links">
+            <li><a href="home">Home</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="login">Login</a></li>
+          </ul>
+          <a href="#" class="action_btn">Get Started</a>
+          <div class="toggle_btn" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown_menu" [ngClass]="{'open': isMenuOpen}">
+            <li><a href="home">Home</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="login">Login</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+          <Section id="welcome_dog">
+            <h1>Welcome!</h1>
+            <p>Come get a new friend for your family today!</p> 
+          </Section>
+      </main>      
+</body>
+</html>
